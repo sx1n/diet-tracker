@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_navigation"
+    app:startDestination="@id/nameRegistrationFragment">
+
+    <fragment
+        android:id="@+id/heightRegistrationFragment"
+        android:name="com.sx1n.diettracker.fragments.HeightRegistrationFragment"
+        android:label="fragment_height_registration"
+        tools:layout="@layout/fragment_height_registration" >
+        <action
+            android:id="@+id/action_heightRegistrationFragment_to_weightRegistrationFragment"
+            app:destination="@id/weightRegistrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genderRegistrationFragment"
+        android:name="com.sx1n.diettracker.fragments.GenderRegistrationFragment"
+        android:label="fragment_gender_registration"
+        tools:layout="@layout/fragment_gender_registration" >
+        <action
+            android:id="@+id/action_genderRegistrationFragment_to_heightRegistrationFragment"
+            app:destination="@id/heightRegistrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightRegistrationFragment"
+        android:name="com.sx1n.diettracker.fragments.WeightRegistrationFragment"
+        android:label="fragment_weight_registration"
+        tools:layout="@layout/fragment_weight_registration" >
+        <action
+            android:id="@+id/action_weightRegistrationFragment_to_physicalActivityRegistrationFragment"
+            app:destination="@id/physicalActivityRegistrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/physicalActivityRegistrationFragment"
+        android:name="com.sx1n.diettracker.fragments.PhysicalActivityRegistrationFragment"
+        android:label="fragment_physical_activity_registration"
+        tools:layout="@layout/fragment_physical_activity_registration" >
+        <action
+            android:id="@+id/action_physicalActivityRegistrationFragment_to_weightGoalRegistrationFragment"
+            app:destination="@id/weightGoalRegistrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nameRegistrationFragment"
+        android:name="com.sx1n.diettracker.fragments.NameRegistrationFragment"
+        android:label="fragment_name_registration"
+        tools:layout="@layout/fragment_name_registration" >
+        <action
+            android:id="@+id/action_nameRegistrationFragment_to_genderRegistrationFragment"
+            app:destination="@id/genderRegistrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightGoalRegistrationFragment"
+        android:name="com.sx1n.diettracker.fragments.WeightGoalRegistrationFragment"
+        android:label="fragment_weight_goal_registration"
+        tools:layout="@layout/fragment_weight_goal_registration" >
+        <action
+            android:id="@+id/action_weightGoalRegistrationFragment_to_birthdateRegistrationFragment"
+            app:destination="@id/birthdateRegistrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/birthdateRegistrationFragment"
+        android:name="com.sx1n.diettracker.fragments.BirthdateRegistrationFragment"
+        android:label="fragment_birthdate_registration"
+        tools:layout="@layout/fragment_birthdate_registration" />
+</navigation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="opaque_white">#9B9B9B</color>
+
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="green_300">#33B074</color> <!-- Solid backgrounds, buttons --> <!-- White text -->
+    <color name="green_300_background">#3233B074</color> <!-- Solid backgrounds, buttons --> <!-- White text -->
+    <color name="green_400">#30A46C</color> <!-- Solid backgrounds, buttons --> <!-- White text -->
+    <color name="green_500">#2F7C57</color> <!-- Borders, focus rings -->
+    <color name="green_600">#28684A</color> <!-- Borders, focus rings -->
+
+    <color name="violet_300">#7D66D9</color> <!-- Solid backgrounds, buttons --> <!-- White text -->
+    <color name="violet_400">#6E56CF</color> <!-- Solid backgrounds, buttons --> <!-- White text -->
+    <color name="violet_500">#6E56CF</color> <!-- Borders, focus rings -->
+    <color name="violet_600">#56468B</color> <!-- Borders, focus rings -->
+
+    <color name="gray_800">#191919</color>
+    <color name="gray_900">#111111</color>
+
+    <color name="red_300">#E5484D</color>
+    <color name="red_400">#B54548</color>
+
+    <color name="yellow_300">#FFCA16</color>
+
+</resources>

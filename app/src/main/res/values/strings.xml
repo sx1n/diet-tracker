@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Diet Tracker</string>
+    <string name="welcome_description">Mantenha sua dieta em dia</string>
+    <string name="login_welcome">Entrar</string>
+    <string name="register_welcome">Registrar-se</string>
+    <string name="register">Registro</string>
+    <string name="comeback">voltar</string>
+    <string name="required">Obrigatório*</string>
+    <string name="who_are_you">Quem é você?</string>
+    <string name="lastname">Sobrenome</string>
+    <string name="firstname">Nome</string>
+    <string name="next">Avançar</string>
+    <string name="character_limit_reached">Limite de caracteres atingido</string>
+</resources>

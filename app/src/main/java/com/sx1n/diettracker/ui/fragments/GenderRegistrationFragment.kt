@@ -1,4 +1,4 @@
-package com.sx1n.diettracker.fragments
+package com.sx1n.diettracker.ui.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import com.sx1n.diettracker.R
 import com.sx1n.diettracker.databinding.FragmentGenderRegistrationBinding
 import com.sx1n.diettracker.databinding.FragmentPhysicalActivityRegistrationBinding
-import com.sx1n.diettracker.listeners.OnStepChangedListener
+import com.sx1n.diettracker.ui.listeners.OnStepChangedListener
 import com.sx1n.diettracker.utils.viewBinding
 
 class GenderRegistrationFragment : Fragment(R.layout.fragment_gender_registration) {

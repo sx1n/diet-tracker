@@ -1,4 +1,4 @@
-package com.sx1n.diettracker.fragments
+package com.sx1n.diettracker.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

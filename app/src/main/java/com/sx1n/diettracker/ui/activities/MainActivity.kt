@@ -1,7 +1,8 @@
-package com.sx1n.diettracker
+package com.sx1n.diettracker.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.sx1n.diettracker.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

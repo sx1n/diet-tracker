@@ -1,10 +1,9 @@
-package com.sx1n.diettracker
+package com.sx1n.diettracker.ui.activities
 
 import android.content.Intent
-import android.content.res.Configuration
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
+import com.sx1n.diettracker.R
 import com.sx1n.diettracker.databinding.ActivityWelcomeBinding
 
 class WelcomeActivity : AppCompatActivity() {

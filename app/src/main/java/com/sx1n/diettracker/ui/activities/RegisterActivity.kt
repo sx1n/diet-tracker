@@ -1,9 +1,9 @@
-package com.sx1n.diettracker
+package com.sx1n.diettracker.ui.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.sx1n.diettracker.databinding.ActivityRegisterBinding
-import com.sx1n.diettracker.listeners.OnStepChangedListener
+import com.sx1n.diettracker.ui.listeners.OnStepChangedListener
 
 class RegisterActivity : AppCompatActivity(), OnStepChangedListener {
 

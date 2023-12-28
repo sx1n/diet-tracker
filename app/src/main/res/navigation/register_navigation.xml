@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/heightRegistrationFragment"
-        android:name="com.sx1n.diettracker.fragments.HeightRegistrationFragment"
+        android:name="com.sx1n.diettracker.ui.fragments.HeightRegistrationFragment"
         android:label="fragment_height_registration"
         tools:layout="@layout/fragment_height_registration" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/genderRegistrationFragment"
-        android:name="com.sx1n.diettracker.fragments.GenderRegistrationFragment"
+        android:name="com.sx1n.diettracker.ui.fragments.GenderRegistrationFragment"
         android:label="fragment_gender_registration"
         tools:layout="@layout/fragment_gender_registration" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/weightRegistrationFragment"
-        android:name="com.sx1n.diettracker.fragments.WeightRegistrationFragment"
+        android:name="com.sx1n.diettracker.ui.fragments.WeightRegistrationFragment"
         android:label="fragment_weight_registration"
         tools:layout="@layout/fragment_weight_registration" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/physicalActivityRegistrationFragment"
-        android:name="com.sx1n.diettracker.fragments.PhysicalActivityRegistrationFragment"
+        android:name="com.sx1n.diettracker.ui.fragments.PhysicalActivityRegistrationFragment"
         android:label="fragment_physical_activity_registration"
         tools:layout="@layout/fragment_physical_activity_registration" >
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/nameRegistrationFragment"
-        android:name="com.sx1n.diettracker.fragments.NameRegistrationFragment"
+        android:name="com.sx1n.diettracker.ui.fragments.NameRegistrationFragment"
         android:label="fragment_name_registration"
         tools:layout="@layout/fragment_name_registration" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/weightGoalRegistrationFragment"
-        android:name="com.sx1n.diettracker.fragments.WeightGoalRegistrationFragment"
+        android:name="com.sx1n.diettracker.ui.fragments.WeightGoalRegistrationFragment"
         android:label="fragment_weight_goal_registration"
         tools:layout="@layout/fragment_weight_goal_registration" >
         <action
@@ -61,7 +61,7 @@
     </fragment>
     <fragment
         android:id="@+id/birthdateRegistrationFragment"
-        android:name="com.sx1n.diettracker.fragments.BirthdateRegistrationFragment"
+        android:name="com.sx1n.diettracker.ui.fragments.BirthdateRegistrationFragment"
         android:label="fragment_birthdate_registration"
         tools:layout="@layout/fragment_birthdate_registration" />
 </navigation>

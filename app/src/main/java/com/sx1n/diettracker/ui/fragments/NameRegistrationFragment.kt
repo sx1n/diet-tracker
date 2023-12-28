@@ -1,4 +1,4 @@
-package com.sx1n.diettracker.fragments
+package com.sx1n.diettracker.ui.fragments
 
 import android.content.Context
 import android.content.res.ColorStateList
@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.sx1n.diettracker.R
 import com.sx1n.diettracker.databinding.FragmentNameRegistrationBinding
-import com.sx1n.diettracker.listeners.OnStepChangedListener
+import com.sx1n.diettracker.ui.listeners.OnStepChangedListener
 import com.sx1n.diettracker.utils.viewBinding
 
 class NameRegistrationFragment : Fragment(R.layout.fragment_name_registration) {

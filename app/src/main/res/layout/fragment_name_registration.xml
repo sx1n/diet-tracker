@@ -26,13 +26,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="40dp"
         android:hint="@string/firstname"
-        app:boxStrokeErrorColor="@color/red_300"
         app:counterMaxLength="20"
-        app:counterTextAppearance="@font/inter_bold"
-        app:cursorErrorColor="@color/red_300"
-        app:errorIconTint="@color/red_300"
-        app:errorTextAppearance="@font/inter_bold"
-        app:errorTextColor="@color/red_300"
         app:helperText="@string/required"
         app:helperTextTextColor="@color/red_300"
         app:layout_constraintTop_toBottomOf="@+id/tv_register_name">
@@ -42,8 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_regular"
-            android:inputType="textPersonName"
-            android:maxLength="20" />
+            android:inputType="textPersonName" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -54,14 +47,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
         android:hint="@string/lastname"
-        app:boxStrokeErrorColor="@color/red_300"
-        app:counterEnabled="false"
-        app:counterMaxLength="45"
-        app:counterTextAppearance="@font/inter_bold"
-        app:cursorErrorColor="@color/red_300"
-        app:errorIconTint="@color/red_300"
-        app:errorTextAppearance="@font/inter_bold"
-        app:errorTextColor="@color/red_300"
+        app:counterMaxLength="40"
         app:helperText="@string/required"
         app:helperTextTextColor="@color/red_300"
         app:layout_constraintTop_toBottomOf="@+id/firstname_text_input_layout">
@@ -70,13 +56,13 @@
             android:id="@+id/lastname_text_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:maxLength="45" />
+            android:fontFamily="@font/inter_regular"
+            android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_avancar"
-        style="@style/RegisterButton"
+        style="@style/CustomButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"

@@ -21,7 +21,7 @@ class RegisterActivity : AppCompatActivity(), OnStepChangedListener {
 
     override fun onStepChanged(step: Int) {
         val totalSteps = 8
-        val progress = ((step.toFloat() / totalSteps) * 100).toInt()
+        val progress = ((step.toFloat() / totalSteps) * 800).toInt()
 
         val animator = ObjectAnimator.ofInt(binding.registerProgressBar, "progress", progress)
         animator.duration = 500

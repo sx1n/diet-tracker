@@ -47,7 +47,7 @@ class NameRegistrationFragment : Fragment(R.layout.fragment_name_registration) {
 
         setupUi()
 
-        binding.btnAvancar.setOnClickListener {
+        binding.btnNext.setOnClickListener {
             val firstName = firstnameTextInput.text.toString()
             val lastName = lastnameTextInput.text.toString()
 
@@ -160,7 +160,7 @@ class NameRegistrationFragment : Fragment(R.layout.fragment_name_registration) {
     }
 
     private fun disableButton() {
-        val btnNext = binding.btnAvancar
+        val btnNext = binding.btnNext
         btnNext.isClickable = false
         btnNext.isEnabled = false
         btnNext.isLongClickable = false
@@ -168,7 +168,7 @@ class NameRegistrationFragment : Fragment(R.layout.fragment_name_registration) {
     }
 
     private fun enableButton() {
-        val btnNext = binding.btnAvancar
+        val btnNext = binding.btnNext
         btnNext.isClickable = true
         btnNext.isEnabled = true
         btnNext.isLongClickable = true

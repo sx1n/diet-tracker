@@ -61,7 +61,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_avancar"
+        android:id="@+id/btn_next"
         style="@style/CustomButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -71,6 +71,7 @@
         android:enabled="false"
         android:fontFamily="@font/inter_bold"
         android:longClickable="false"
+        android:textColor="@color/opaque_white"
         android:text="@string/next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -11,4 +11,6 @@
     <string name="firstname">Nome</string>
     <string name="next">Avançar</string>
     <string name="character_limit_reached">Limite de caracteres atingido</string>
+    <string name="what_is_your_height">Qual é a sua altura?</string>
+    <string name="height_unit">cm</string>
 </resources>

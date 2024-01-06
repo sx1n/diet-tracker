@@ -7,12 +7,82 @@
     tools:context=".ui.fragments.NameRegistrationFragment">
 
     <TextView
+        android:id="@+id/tv_register_height"
+        style="@style/TEXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registrar Altura 3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="24dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/what_is_your_height"
+        android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/ruler_picker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edit_height"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow_300"
+            android:enabled="false"
+            android:inputType="numberSigned"
+            android:textSize="24sp"
+            tools:text="150"
+            tools:ignore="LabelFor"
+            android:importantForAutofill="no" />
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/height_unit"
+            android:textSize="18sp"
+            android:layout_margin="2dp"
+            />
+    </LinearLayout>
+
+    <com.kevalpatel2106.rulerpicker.RulerValuePicker
+        android:id="@+id/ruler_picker"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/custom_ruler_picker"
+        app:indicator_color="@color/white"
+        app:indicator_interval="16dp"
+        app:indicator_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_register_height"
+        app:max_value="300"
+        app:min_value="85"
+        app:notch_color="@color/yellow_300"
+        app:ruler_text_size="7sp"
+        android:padding="0.8dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        style="@style/CustomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ruler_picker" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

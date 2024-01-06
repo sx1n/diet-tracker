@@ -44,9 +44,14 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("com.airbnb.android:lottie:6.2.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
+
+    // Lottie
+    implementation("com.airbnb.android:lottie:6.2.0")
+
+    // Rule Picker Component
+    implementation(files("libs/ruler-picker.aar"))
 
     // Annotation processor
     implementation("androidx.lifecycle:lifecycle-common-java8:2.6.2")

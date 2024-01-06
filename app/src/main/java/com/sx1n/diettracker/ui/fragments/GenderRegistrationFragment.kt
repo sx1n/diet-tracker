@@ -4,7 +4,6 @@ import android.content.Context
 import android.os.Bundle
 import android.view.View
 import android.widget.RadioButton
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -17,9 +16,9 @@ import com.sx1n.diettracker.utils.viewBinding
 
 class GenderRegistrationFragment : Fragment(R.layout.fragment_gender_registration) {
 
-    private val binding by viewBinding(FragmentGenderRegistrationBinding::bind)
+    private lateinit var stepChangedListener: OnStepChangedListener
 
-    private var stepChangedListener: OnStepChangedListener? = null
+    private val binding by viewBinding(FragmentGenderRegistrationBinding::bind)
 
     private val viewModel: RegisterViewModel by navGraphViewModels(R.id.register_navigation)
 
@@ -34,7 +33,7 @@ class GenderRegistrationFragment : Fragment(R.layout.fragment_gender_registratio
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        notifyStepChanged(2)
+        notifyStepChanged()
 
         observe()
 
@@ -50,8 +49,8 @@ class GenderRegistrationFragment : Fragment(R.layout.fragment_gender_registratio
         }
     }
 
-    private fun notifyStepChanged(step: Int) {
-        stepChangedListener?.onStepChanged(step)
+    private fun notifyStepChanged() {
+        stepChangedListener.onStepChanged(2)
     }
 
     private fun enableButton() {

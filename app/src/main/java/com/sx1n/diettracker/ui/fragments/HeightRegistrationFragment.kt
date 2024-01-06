@@ -23,7 +23,6 @@ class HeightRegistrationFragment : Fragment(R.layout.fragment_height_registratio
     private val binding by viewBinding(FragmentHeightRegistrationBinding::bind)
 
     private lateinit var rulerValuePicker: RulerValuePicker
-
     private lateinit var heightEditText: EditText
 
     private val viewModel: RegisterViewModel by navGraphViewModels(R.id.register_navigation)

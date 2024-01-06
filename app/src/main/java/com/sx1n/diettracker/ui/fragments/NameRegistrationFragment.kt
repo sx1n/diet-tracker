@@ -18,7 +18,8 @@ import com.sx1n.diettracker.ui.listeners.OnStepChangedListener
 import com.sx1n.diettracker.utils.viewBinding
 
 class NameRegistrationFragment : Fragment(R.layout.fragment_name_registration) {
-    private var stepChangedListener: OnStepChangedListener? = null
+
+    private lateinit var stepChangedListener: OnStepChangedListener
 
     private val binding by viewBinding(FragmentNameRegistrationBinding::bind)
 
@@ -31,6 +32,7 @@ class NameRegistrationFragment : Fragment(R.layout.fragment_name_registration) {
 
     private var firstnameHasError = true
     private var lastnameHasError = true
+
     override fun onAttach(context: Context) {
         super.onAttach(context)
         if (context is OnStepChangedListener) {
@@ -43,7 +45,7 @@ class NameRegistrationFragment : Fragment(R.layout.fragment_name_registration) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        notifyStepChanged(1)
+        notifyStepChanged()
 
         setupUi()
 
@@ -131,8 +133,8 @@ class NameRegistrationFragment : Fragment(R.layout.fragment_name_registration) {
 
     }
 
-    private fun notifyStepChanged(step: Int) {
-        stepChangedListener?.onStepChanged(step)
+    private fun notifyStepChanged() {
+        stepChangedListener.onStepChanged(1)
     }
 
     private fun setupUi() {

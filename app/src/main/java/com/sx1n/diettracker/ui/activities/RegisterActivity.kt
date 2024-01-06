@@ -16,6 +16,10 @@ class RegisterActivity : AppCompatActivity(), OnStepChangedListener {
 
         binding = ActivityRegisterBinding.inflate(layoutInflater)
 
+        binding.registerBackButton.setOnClickListener {
+            finish()
+        }
+
         setContentView(binding.root)
     }
 

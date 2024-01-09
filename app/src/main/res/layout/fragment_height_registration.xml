@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BACKGROUND"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.NameRegistrationFragment">
+    tools:context=".ui.fragments.HeightRegistrationFragment">
 
     <TextView
         android:id="@+id/tv_register_height"
@@ -21,10 +22,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginBottom="10dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
-        android:layout_marginStart="30dp"
         app:layout_constraintBottom_toTopOf="@+id/ruler_picker"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -36,20 +37,19 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/yellow_300"
             android:enabled="false"
+            android:importantForAutofill="no"
             android:inputType="numberSigned"
             android:textSize="24sp"
-            tools:text="150"
             tools:ignore="LabelFor"
-            android:importantForAutofill="no" />
+            tools:text="150" />
 
         <TextView
             style="@style/TEXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/height_unit"
-            android:textSize="18sp"
             android:layout_margin="2dp"
-            />
+            android:text="@string/height_unit"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <com.kevalpatel2106.rulerpicker.RulerValuePicker
@@ -59,6 +59,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="80dp"
         android:background="@drawable/custom_ruler_picker"
+        android:padding="0.8dp"
         app:indicator_color="@color/white"
         app:indicator_interval="16dp"
         app:indicator_width="2dp"
@@ -68,8 +69,7 @@
         app:max_value="300"
         app:min_value="85"
         app:notch_color="@color/yellow_300"
-        app:ruler_text_size="7sp"
-        android:padding="0.8dp"/>
+        app:ruler_text_size="7sp" />
 
 
     <androidx.appcompat.widget.AppCompatButton

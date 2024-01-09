@@ -71,8 +71,8 @@
         android:enabled="false"
         android:fontFamily="@font/inter_bold"
         android:longClickable="false"
-        android:textColor="@color/opaque_white"
         android:text="@string/next"
+        android:textColor="@color/opaque_white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lastname_text_input_layout" />
